@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <title>المنتجات</title>
+ 
+</head>
+<body >
+  <h1>المنتجات</h1>
+  <table id="table" border="3px">
+    <tr id="tr">
+      <th>المنتج</th>
+      <th>تفاصيل</th>
+      <th>السعر</th>
+      <th>صورة</th>
+    </tr>
+    <tr id="tbody">
+      <td>مروحة كهربائية</td>
+      <td>مروحة ذات سرعات متعددة وشكل أنيق</td>
+      <td>1000000 ل.س</td>
+      <td><img src="E:\IWB201_S23\OIP.jpg" width="150px" height="150px" alt="مروحة كهربائية">
+        <button class="btn" onclick="addToCart('مروحة كهربائية', 1000000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+    <tr>
+      <td> مطحنة قهوة</td>
+      <td>مطحنة قهوة تورنيدو 180-220 وات بشفرة من الاستانلس ستيل استانلس TCG-220 </td>
+      <td>2300000 ل.س</td>
+      <td><img src="1.jpg" width="150px" height="150px" alt="load ">
+        <button class="btn" onclick="addToCart('مطحنة قهوة', 2300000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+    <tr>
+      <td> ثلاجة </td>
+      <td> ثلاجة توشيبا نوفروست 296 لتر شامبين GR-EF31-C </td>
+      <td>5000000 ل.س</td>
+      <td><img src="2.jpg" width="150px" height="150px" alt="load ">
+        <button class="btn" onclick="addToCart('ثلاجة ', 5000000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+    <tr>
+      <td> فرن </td>
+      <td>فرن تورنيدو بلت إن كهرباء 60 × 60 سم - 67 لتر استانلس ستيل EO-VM60CSU-S </td>
+      <td>3450000 ل.س</td>
+      <td><img src="3.jpg" width="150px" height="150px" alt="load ">
+        <button class="btn" onclick="addToCart('فرن ', 3450000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+    <tr>
+      <td> مبرد مياه </td>
+      <td>
+        مبرد مياه تورنيدو 3 حنفية قارورة داخلية سيلفر WDM-H40ADE-S </td>
+      <td>3000000 ل.س</td>
+      <td><img src="4.jpg" width="150px" height="150px" alt="load ">
+        <button class="btn" onclick="addToCart('مبرد مياه ', 3000000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+    
+    <tr>
+      <td> بوتوجاز  </td>
+      <td>    بوتاجاز لاجيرمانيا 60 × 60 - 4 شعلة غاز استانلس × أسود 6C40GRB1X4AWW </td>
+      <td>4390000 ل.س</td>
+      <td><img src="5.jpg" width="150px" height="150px" alt="load ">
+        <button class="btn" onclick="addToCart('بوتوجاز  ', 4390000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+    <tr>
+      <td> غلاية مياه  </td>
+      <td>         غلاية مياه تورنيدو بلاستيك 1.7 لتر 1850-2200 وات أبيض TKP-2117</td>
+      <td>5550000 ل.س</td>
+      <td><img src="6.jpg" width="150px" height="150px" alt="load ">
+        <button class="btn" onclick="addToCart('غلاية مياه', 5550000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+    <tr>
+      <td>  مكنسة كهربائية  </td>
+      <td> 
+        مكنسة كهربائية هوفر 700 وات فلتر هيبا قرمزي SL71_SL60 020</td>
+      <td>6500000 ل.س</td>
+      <td><img src="7.jpg" width="150px" height="150px" alt="load ">
+        <button class="btn" onclick="addToCart('مكنسة كهربائية', 6500000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+    <tr>
+      <td>  عصارة </td>
+      <td> 
+        عصارة موالح تورنيدو قدرة 30 وات سعة 0.8 لتر لون أسود × سيلفر CJ-30TL</td>
+      <td>1250000 ل.س</td>
+      <td><img src="8.jpg" width="150px" height="150px" alt="load ">
+        <button class="btn" onclick="addToCart(' عصارة', 1250000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+    <tr>
+      <td>  فرن كهربائي </td>
+      <td> 
+        فرن كهربائي تورنيدو 46 لتر 1800 وات شواية مروحة أسود TEO-46NE(K)</td>
+      <td>6500000 ل.س</td>
+      <td><img src="10.jpg" width="150px" height="150px" alt="load ">
+        <button class="btn" onclick="addToCart(' فرن كهربائي', 6500000)">إضافة إلى السلة</button>
+      </td>
+    </tr>
+  </table>
+  
+  <h2>سلة المشتريات</h2>
+  
+  <table id="cart" border>
+    <tr>
+      <th>رقم المنتج</th>
+      <th>المنتج</th>
+      <th>السعر</th>
+      <th>الكمية</th>
+      <th>السعر الإجمالي</th>
+    </tr>
+  </table>
+
+  <div id="tax"></div>
+  <div id="total"></div>
+  
+  
+  <button class="btn" onclick="clearCart()">إلغاء</button>
+  <button class="btn" onclick="checkout()">متابعة</button>
+
+  <script>
+    var cartItems = [];
+    var totalPrice = 0;
+
+    function addToCart(product, price) {
+      var quantity = parseInt(prompt("الكمية:"));
+      var total = price * quantity;
+      var item = {      
+        product: product,
+        price: price,
+        quantity: quantity,
+        total: total
+      }
+      cartItems.push(item);
+      updateCart();
+      calculateTotal();
+    }
+
+    function updateCart() {
+      var cartTable = document.getElementById("cart");
+      cartTable.innerHTML = `
+        <tr>
+          <th>رقم المنتج</th>
+          <th>المنتج</th>
+          <th>السعر</th>
+          <th>الكمية</th>
+          <th>السعر الإجمالي</th>
+        </tr>
+      `;
+
+      for (var i = 0; i < cartItems.length; i++) {
+        var item = cartItems[i];
+
+        var tr = document.createElement('tr');
+        var td1 = tr.appendChild(document.createElement('td'));
+        var td2 = tr.appendChild(document.createElement('td'));
+        var td3 = tr.appendChild(document.createElement('td'));
+        var td4 = tr.appendChild(document.createElement('td'));
+        var td5 = tr.appendChild(document.createElement('td'));
+
+        td1.innerHTML = i + 1;
+        td2.innerHTML = item.product;
+        td3.innerHTML = item.price;
+        td4.innerHTML = item.quantity;
+        td5.innerHTML = item.total;
+
+        cartTable.appendChild(tr);
+      }
+    }
+
+    function clearCart() {
+      cartItems = [];
+      updateCart();
+      calculateTotal();
+    }
+    
+    function calculateTotal() {
+      totalPrice = 0;
+      for (var i = 0; i < cartItems.length; i++) {
+        totalPrice += cartItems[i].total;
+      }
+
+      var tax = totalPrice * 0.05;
+      var finalTotal = totalPrice + tax;
+
+      document.getElementById("tax").innerHTML = "الضريبة: " + tax;
+      document.getElementById("total").innerHTML = "المجموع النهائي: " + finalTotal;
+    }
+    
+
+    function checkout() {
+    
+        document.write(`<form onsubmit="event.preventDefault(); number_correct();">
+    <div>
+<label for="fn">الاسم الكامل لمقدم الطلب</label><br>
+<input type="text" id="fn" onclick="validateArabicName()">
+</div>
+<div><label for="id" >الرقم الوطني</label><br>
+<input type="number" id="id" required>
+</div>
+<div>
+<label for="date">تاريخ الولادة </label><br>
+<input type="date" id="date"></div>
+<div>
+<label for="phone" >رقم الموبايل</label><br>
+<input type="number" id="phone" placeholder="995495082" onclick="number_corect()"></div>
+<div>
+<label for="mail">الايميل</label><br>
+<input type="email" id="mail" onclick="validateEmail()"></div>
+<br>
+<label id = "captcha" class="captcha" name = "mycaptcha"></label>
+<br><br>
+<input type="text" id="cood_id"  placeholder="ادخل رمز التحقق" class="margbu" >
+<input type="button" value="&#128257;" class="emoji" name="refreh_js" onclick="generate_captcha()">
+<br><br>
+<button onclick="ftotal()" style="  cursor: pointer;
+    background-color: coral;   
+    border-radius: 10px;
+    font-size: 15px;" >شراء</button>
+</form> `);
+}
+ 
+function ftotal() {   var finalTotal = totalPrice;
+    alert("المجموع النهائي: " + finalTotal);      
+    }
+
+    
+   function generate_captcha()
+    {
+        
+        let result = '';
+        let string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabsdefghijklmnopqrstuvwxyz0123456789';
+      
+        for (let s = 0; s < 6; s++ )
+        {
+            result += string.charAt(Math.floor(Math.random()*string.length));
+        }
+        document.getElementById("captcha").innerHTML = result;
+        
+
+    }
+    function check_captcha()
+    {
+        let text_captcha = document.getElementById("captcha").textContent;
+        return text_captcha == form1.place_cood.value;
+    }
+    
+    function number_correct() {
+      var inputID = document.getElementById('phone').value;
+      var isValid = validateSyrianID(inputID);
+
+      if (!isValid) {       
+      
+        alert('الرقم المدخل غير صحيح أو لا يتبع نمط الأرقام الوطنية السورية.');
+      }
+    }
+
+    function validateSyrianID(id) {
+      var syrianIDPattern = /^\d{9}$/;
+      return syrianIDPattern.test(id);
+    }
+
+    function validateArabicName() {
+      var inputName = document.getElementById('fn').value;
+      var isValid = /^[ء-ي ]+$/.test(inputName);
+
+      if (!isValid) {   
+        alert('الاسم المدخل غير صحيح أو يحتوي على حروف غير عربية.');
+      }
+    }
+
+    function validateEmail() {
+      var inputEmail = document.getElementById('mail').value;
+      var isValid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(inputEmail);
+
+      if (!isValid) {
+        alert('البريد الإلكتروني غير صحيح.');
+      }
+    }
+</script>
+</body>
+</html>
